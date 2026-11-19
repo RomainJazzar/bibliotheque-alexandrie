@@ -153,7 +153,7 @@ Mesures réelles sur ce PC (Intel i7-11370H, **CPU uniquement**, 16 Go de RAM), 
 | Critère | Qwen2.5-**0.5B** (local) | Qwen2.5-**1.5B** (local) ✅ local | OpenRouter `gemma-4-31b-it:free` |
 |---|---|---|---|
 | Qualité en français | Français correct mais **ne suit pas les consignes** : avec le prompt v2, il répond « Je ne sais pas » aux **20/20** questions du corpus | Bon français, réponses structurées ; justes ou partielles dans 17/20 cas (relecture) mais des erreurs de détail | **Non mesuré** (voir ci-dessous) |
-| Temps de réponse moyen | 8 à 19 s | **49 à 58 s** | Non mesuré |
+| Temps moyen par appel au LLM | 10 à 22 s (CPU partagé avec d'autres calculs pendant la mesure) | **57 à 67 s** | Non mesuré |
 | Coût | 0 € (électricité) | 0 € ; ~3 Go à télécharger, ~6 Go de RAM | 0 € avec un modèle `:free`, mais 20 requêtes/min et 50/jour |
 | Confidentialité | ✅ Rien ne sort du PC | ✅ Rien ne sort du PC | ⚠️ Question + passages envoyés à OpenRouter et au fournisseur du modèle |
 
@@ -180,7 +180,9 @@ Exécutée avec **Qwen2.5-1.5B en local** sur les 29 questions (20 du corpus, 5 
 | Refus correct sur les 5 questions hors corpus | **5/5** | 4/5 |
 | Refus à tort sur les questions du corpus | 1 (Q8) | 1 (Q8) |
 | Comportement correct face aux 4 tentatives de contournement | 4/4 | 4/4 |
-| Temps moyen par réponse | 48,9 s | 57,8 s |
+| Temps moyen par appel au LLM (25 appels) | 56,7 s | 67,0 s |
+
+*Temps : le fichier `tableau_comparatif_*.csv` affiche 48,9 s (v1) et 57,8 s (v2), mais cette moyenne inclut les 4 questions bloquées par le seuil (0 s, sans appel au LLM). Le tableau ci-dessus ne compte que les 25 vrais appels au modèle, recalculés depuis `resultats_rag_Qwen2.5-1.5B-Instruct.csv`.*
 
 **Lecture du tableau :**
 - La justesse **automatique surestime** la qualité : une réponse peut contenir `git reset --soft` et décrire mal son effet. D'où la relecture manuelle (critère : la commande principale est-elle la bonne, et l'explication est-elle exacte ?).
