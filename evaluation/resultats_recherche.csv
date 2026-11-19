@@ -1,0 +1,26 @@
+id,type,question,meilleure_similarite_100,hit3_100,rang_100,meilleure_similarite_300,hit3_300,rang_300
+1,corpus,Comment configurer mon nom et mon adresse e-mail dans Git ?,0.904,1,1,0.904,1,1
+2,corpus,Comment créer un nouveau dépôt Git dans un dossier qui existe déjà ?,0.906,0,,0.906,1,3
+3,corpus,Comment faire pour que Git ignore certains fichiers comme les .log ?,0.895,1,1,0.892,1,1
+4,corpus,Comment afficher l'historique des commits d'un projet ?,0.876,1,1,0.863,1,2
+5,corpus,J'ai oublié d'ajouter un fichier dans mon dernier commit : comment le corriger ?,0.893,1,1,0.877,0,
+6,corpus,Comment retirer de l'index un fichier que j'ai ajouté par erreur avec git add ?,0.897,1,1,0.884,1,1
+7,corpus,Comment ajouter un dépôt distant à mon projet local ?,0.895,1,3,0.882,1,3
+8,corpus,Avec quelle commande j'envoie mes commits sur le serveur distant ?,0.875,0,,0.872,0,
+9,corpus,Comment créer une étiquette annotée pour marquer une version ?,0.893,1,1,0.886,1,1
+10,corpus,Comment créer un raccourci (alias) pour une commande Git que j'utilise souvent ?,0.875,1,1,0.875,0,
+11,corpus,Comment créer une branche et basculer dessus en une seule commande ?,0.877,0,,0.864,0,
+12,corpus,Que faire quand Git m'indique un conflit pendant une fusion ?,0.899,1,3,0.882,1,2
+13,corpus,Quelle est la différence entre rebaser et fusionner ?,0.905,1,1,0.897,1,1
+14,corpus,Comment mettre de côté mes modifications en cours sans faire de commit ?,0.878,0,,0.876,0,
+15,corpus,Comment générer une clé SSH pour me connecter à un serveur Git ?,0.91,1,3,0.921,1,3
+16,corpus,Comment trouver le commit qui a introduit un bug ?,0.889,1,1,0.886,1,1
+17,corpus,Quelle est la différence entre git reset --soft et git reset --hard ?,0.884,1,1,0.866,1,1
+18,corpus,Comment proposer une contribution à un projet GitHub avec une pull request ?,0.906,1,1,0.91,1,1
+19,corpus,Comment lancer automatiquement un script avant chaque commit ?,0.873,0,,0.864,1,1
+20,corpus,J'ai fait un git reset --hard par erreur : comment récupérer le commit perdu ?,0.896,1,1,0.901,1,2
+21,hors_corpus,Comment installer Docker Desktop sur Windows ?,0.854,,,0.853,,
+22,hors_corpus,Comment créer une table dans PostgreSQL ?,0.843,,,0.846,,
+23,hors_corpus,Comment entraîner une régression linéaire avec scikit-learn ?,0.834,,,0.837,,
+24,hors_corpus,Quelle est la capitale de l'Australie ?,0.744,,,0.748,,
+25,hors_corpus,Combien coûte un abonnement à GitHub Copilot ?,0.856,,,0.849,,

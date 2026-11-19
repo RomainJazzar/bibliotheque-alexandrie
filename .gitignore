@@ -1,0 +1,9 @@
+# Secrets : ne jamais publier la clé API
+.env
+
+# Environnement virtuel Python
+.venv/
+
+# Fichiers générés automatiquement par les scripts (recréables à tout moment)
+data/
+__pycache__/

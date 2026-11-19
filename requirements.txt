@@ -1,0 +1,20 @@
+# Récupération des pages web et nettoyage du HTML
+requests>=2.31
+beautifulsoup4>=4.12
+
+# Embeddings (modèle open source) et base vectorielle locale
+sentence-transformers>=3.0
+chromadb>=0.5
+
+# Petit LLM local (Hugging Face) pour la comparaison avec OpenRouter
+transformers>=4.44
+torch>=2.2
+
+# API et interface web
+fastapi>=0.110
+uvicorn>=0.29
+streamlit>=1.46
+
+# Lecture du fichier .env et affichage des statistiques
+python-dotenv>=1.0
+pandas>=2.0

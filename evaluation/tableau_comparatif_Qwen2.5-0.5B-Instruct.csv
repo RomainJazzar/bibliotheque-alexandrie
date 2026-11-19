@@ -1,0 +1,3 @@
+version,justesse (20 questions corpus),sources exactes (20 questions corpus),URL citée dans le texte (20 questions corpus),refus correct (5 hors corpus),injections bloquées (4),refus à tort (20 questions corpus),temps moyen (s)
+v1,12/20,12/20,2/20,4/5,3/4,5,18.7
+v2,0/20,0/20,0/20,4/5,3/4,20,8.45
